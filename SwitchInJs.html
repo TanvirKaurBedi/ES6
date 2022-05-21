@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+Switch Case
+        </title>
+    </head>
+
+    <body>
+<h1>Enter your choice</h1>
+<ul>
+    <li>Add</li>
+    <li>Subtraction</li>
+    <li>Multiplication</li>
+</ul>
+</br>
+<form>
+    <input type="text"id="choices">
+    <button type="Submit"onclick="myFun()">Submit</button>
+</form>
+<script>
+    function myFun()
+    {
+        var Choice = document.getElementById("choices").value;
+        switch(Choice){
+            case "Add": var a=5,b=5;
+                        var Sum=a+b;
+                        document.write("The Sum is :" + Sum );
+                        break;
+             case "Subtraction": var a=5,b=5;
+                        var result=a-b;
+                        document.write("The Subtraction is :" + result );
+                        break;
+              case "Multiplication": var a=5,b=5;
+                        var result=a*b;
+                        document.write("The Multiplication of two number is :" + result );
+                        break;
+               default:alert("Plz enter a valid input");
+        }
+    }
+</script>
+    </body>
+</html>
